@@ -1,13 +1,78 @@
-body {
+/* @import-normalize; */
+
+/* Reset styles */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  display: block;
+  outline: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Root styles */
+
+:root {
+  --primary-white: #ffffff;
+  --primary-black: #121417;
+  --primary-blue: #3470ff;
+  --primary-font: "Manrope", sans-serif;
+
+  --secondary-blue: #0b44cd;
+  --secondary-color: #8a8a89;
+  --secondary-grey: rgb(247, 247, 251);
+  --secondary-font: "Montserrat", sans-serif;
 }
