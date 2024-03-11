@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import { store, persistor } from "./Store/store";
 import { PersistGate } from "redux-persist/integration/react";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -19,3 +19,12 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+// const root = ReactDOM.createRoot(
+//   document.getElementById('root') as HTMLElement
+// );
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );

@@ -28,14 +28,14 @@ export const Layout = () => {
         <BoxGrid>
           <DropdownMenu options={allCarMake} title="Car brand" placeHolder="Enter the text" handleFunction={setFilterMake} />
           <DropdownMenu options={allCarPrice} title="Prices" placeHolder="To $" handleFunction={setFilterPrice} />
-          <DropdownMenu title="Prices" placeHolder="To $" handleFunction={setFilterPrice}>
+          {/* <DropdownMenu title="Prices" placeHolder="To $" handleFunction={setFilterPrice}>
             {allCarPrice}
-          </DropdownMenu>
-          <DropdownMenu title="Сar mileage / km" placeHolder="Enter the text" handleFunction={setFilterMake}>
+          </DropdownMenu> */}
+          {/* <DropdownMenu title="Сar mileage / km" placeHolder="Enter the text" handleFunction={setFilterMake}>
             <WrapMenuCss>
               <span>From</span> <span>To</span>
             </WrapMenuCss>
-          </DropdownMenu>
+          </DropdownMenu> */}
           <SearchBtnCss onClick={handleInputFilter}>Search</SearchBtnCss>
         </BoxGrid>
       </MainWrapCss>
