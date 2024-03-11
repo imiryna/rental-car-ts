@@ -7,9 +7,11 @@ import { selectFavorites } from "../../Store/advert/advertSelector";
 import { useSelector } from "react-redux";
 import ICarAdvert from "../../types/rentalCars.types";
 
+type MyFunctionType = (arg: boolean) => void;
+
 type Props = {
   carInfo: ICarAdvert;
-  setIsOpenModal: Function;
+  setIsOpenModal: MyFunctionType;
 };
 
 export const AdvertCard: React.FC<Props> = ({ carInfo, setIsOpenModal }) => {

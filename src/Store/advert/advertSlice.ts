@@ -85,7 +85,7 @@ const advertSlice = createSlice({
     builder
       .addCase(getAllAdvertThunk.fulfilled, (state, action: PayloadAction<ICarAdvert>) => {
         state.isLoading = false;
-        state.carsAdvert = [...state.carsAdvert, ...action.payload];
+        state.carsAdvert = [...state.carsAdvert, action.payload];
         state.error = null;
       })
       .addCase(getCarBiIdThunk.fulfilled, (state, action: PayloadAction<any>) => {
