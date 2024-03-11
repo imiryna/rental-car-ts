@@ -83,7 +83,7 @@ const advertSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-      .addCase(getAllAdvertThunk.fulfilled, (state, action: PayloadAction<any>) => {
+      .addCase(getAllAdvertThunk.fulfilled, (state, action: PayloadAction<ICarAdvert>) => {
         state.isLoading = false;
         state.carsAdvert = [...state.carsAdvert, ...action.payload];
         state.error = null;
